@@ -56,7 +56,70 @@ def circunferencia(
 <script>
 sagecell.makeSagecell({
     inputLocation: ".sage",
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Circunferência</title>
+    <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+</head>
+
+<body>
+
+<h1>Circunferência</h1>
+
+<h2>Definição</h2>
+
+<p>
+A circunferência é o lugar geométrico dos pontos de um plano
+que são equidistantes de um ponto fixo, chamado centro da circunferência.
+</p>
+
+<p>
+Qualquer segmento que liga o centro a um ponto da circunferência
+é chamado raio.
+</p>
+
+<h2>Construção interativa</h2>
+
+<div class="sage">
+<script type="text/x-sage">
+
+@interact
+def circunferencia(
+    x=input_box(0),
+    y=input_box(0),
+    raio=input_box(2),
+    construcao=selector(["Nenhum", "Raio"], label="Construção")
+):
+
+    centro = (x, y)
+
+    figura = circle(centro, raio) + point(centro, size=10)
+
+    if construcao == "Raio":
+        P = (x + raio, y)
+        figura += line([centro, P], color="red")
+
+    show(figura,
+         xmin=-5, xmax=5,
+         ymin=-5, ymax=5,
+         aspect_ratio=1,
+         axes=False,
+         frame=True)
+
+</script>
+</div>
+    
+<script>
+sagecell.makeSagecell({
+    inputLocation: ".sage",
     template: sagecell.templates.interact
+});
+</script>
+
+</body>
+</html>
 });
 </script>
 
