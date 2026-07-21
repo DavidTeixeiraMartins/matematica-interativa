@@ -1,1 +1,18 @@
+.painel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
 
+
+.controles {
+    display: flex;
+    flex-direction: column;
+}
+
+
+svg {
+    border: 1px solid black;
+    border-radius: 10px;
+}
