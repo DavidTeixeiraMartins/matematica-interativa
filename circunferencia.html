@@ -2,117 +2,109 @@
 <html>
 
 <head>
+
     <meta charset="utf-8">
     <title>Circunferência</title>
 
-    
-    <style>
-    svg {
-        border: 1px solid black;
-        border-radius: 10px;
-        display: block;
-        margin: auto;
-    }
-    </style>
+    <link rel="stylesheet" href="css/estilo.css">
+
 </head>
+
 
 <body>
 
 <h1>Circunferência</h1>
 
+
 <h2>Definição</h2>
 
 <p>
 A <strong>circunferência</strong> é o lugar geométrico dos pontos de um plano
-que são equidistantes de um ponto fixo, chamado <strong>centro</strong> da circunferência.
+que são equidistantes de um ponto fixo, chamado <strong>centro</strong>.
 </p>
+
 
 <p>
 Qualquer segmento que liga o centro a um ponto da circunferência
 é chamado <strong>raio</strong>.
 </p>
 
-<label>
-Centro x:
-<input id="x" type="number" value="100">
-</label>
 
-<label>
-Centro y:
-<input id="y" type="number" value="80">
-</label>
+<div class="painel">
 
-<label>
-Raio:
-<input id="raio" type="number" value="50">
-</label>
 
-<button onclick="criarCircunferencia()">
-Criar
-</button>
-   
-<svg width="600" height="450" id="lousa">
-</svg>
+    <div class="controles">
+
+        <label>
+            Centro x:
+            <input type="number" id="x" value="100">
+        </label>
+
+
+        <label>
+            Centro y:
+            <input type="number" id="y" value="80">
+        </label>
+
+
+        <label>
+            Raio:
+            <input type="number" id="raio" value="50">
+        </label>
+
+
+        <button>
+            Criar
+        </button>
+
+    </div>
+
+
+
+    <svg width="500" height="500" id="lousa">
+    </svg>
+
+
+</div>
+
+
+
+<script src="js/ponto.js"></script>
+
+<script src="js/circunferencia.js"></script>
+
+<script src="js/lousa.js"></script>
+
+
 
 <script>
 
-class Ponto {
-
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-
-}
-
-
-class Circunferencia {
-
-    constructor(centro, raio) {
-        this.centro = centro;
-        this.raio = raio;
-    }
-
-    desenhar(svg) {
-
-        let circulo = document.createElementNS(
-            "http://www.w3.org/2000/svg",
-            "circle"
-        );
-
-        circulo.setAttribute("cx", this.centro.x);
-        circulo.setAttribute("cy", this.centro.y);
-        circulo.setAttribute("r", this.raio);
-
-        circulo.setAttribute("fill", "none");
-        circulo.setAttribute("stroke", "black");
-
-        svg.appendChild(circulo);
-    }
-
-}
 
 let svg = document.getElementById("lousa");
 
 
-function criarCircunferencia() {
+let lousa = new Lousa(svg);
 
-    let x = Number(document.getElementById("x").value);
-    let y = Number(document.getElementById("y").value);
-    let raio = Number(document.getElementById("raio").value);
 
-    let O = new Ponto(x,y);
 
-    let C = new Circunferencia(O,raio);
+let O = new Ponto(100,80);
 
-    C.desenhar(svg);
 
-}
-console.log(C);
+let C = new Circunferencia(O,50);
+
+
+
+lousa.adicionar(C);
+
+
 
 </script>
+
+
 
 </body>
 
 </html>
+
+
 
