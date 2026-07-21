@@ -79,23 +79,31 @@ Qualquer segmento que liga o centro a um ponto da circunferência
 
 <script>
 
-
 let svg = document.getElementById("lousa");
-
 
 let lousa = new Lousa(svg);
 
 
-
-let O = new Ponto(100,80);
-
-
-let C = new Circunferencia(O,50);
+let botao = document.querySelector("button");
 
 
+botao.onclick = function() {
 
-lousa.adicionar(C);
+    let x = Number(document.getElementById("x").value);
 
+    let y = Number(document.getElementById("y").value);
+
+    let raio = Number(document.getElementById("raio").value);
+
+
+    let O = new Ponto(x,y);
+
+    let C = new Circunferencia(O,raio);
+
+
+    lousa.adicionar(C);
+
+};
 
 
 </script>
