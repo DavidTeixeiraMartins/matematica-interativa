@@ -91,6 +91,29 @@ class Circunferencia {
 
 }
 
+desenhar(svg) {
+
+        let circulo = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "circle"
+        );
+
+        circulo.setAttribute("cx", 250);
+        circulo.setAttribute("cy", 250);
+        circulo.setAttribute("r", this.raio);
+
+        circulo.setAttribute("fill", "none");
+        circulo.setAttribute("stroke", "black");
+
+        svg.appendChild(circulo);
+    }
+
+}
+
+let svg = document.getElementById("lousa");
+
+C.desenhar(svg);
+
 
 let O = new Ponto(0,0);
 
