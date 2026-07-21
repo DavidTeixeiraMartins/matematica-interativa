@@ -58,8 +58,8 @@ class Circunferencia {
             "circle"
         );
 
-        circulo.setAttribute("cx", 250);
-        circulo.setAttribute("cy", 250);
+        circulo.setAttribute("cx", this.centro.x);
+        circulo.setAttribute("cy", this.centro.y);
         circulo.setAttribute("r", this.raio);
 
         circulo.setAttribute("fill", "none");
@@ -70,7 +70,7 @@ class Circunferencia {
 
 }
 
-let O = new Ponto(0,0);
+let O = new Ponto(100,80);
 
 let C = new Circunferencia(O,50);
     
