@@ -65,7 +65,6 @@ sagecell.makeSagecell({
 });
 </script>
    
-<!--
 <svg width="500" height="500" id="lousa">
 </svg>
 
@@ -89,9 +88,7 @@ class Circunferencia {
         this.raio = raio;
     }
 
-}
-
-desenhar(svg) {
+    desenhar(svg) {
 
         let circulo = document.createElementNS(
             "http://www.w3.org/2000/svg",
@@ -110,19 +107,19 @@ desenhar(svg) {
 
 }
 
-let svg = document.getElementById("lousa");
-
-C.desenhar(svg);
-
+}
 
 let O = new Ponto(0,0);
 
 let C = new Circunferencia(O,50);
+    
+let svg = document.getElementById("lousa");
+
+C.desenhar(svg);
 
 console.log(C);
 
 </script>
--->
 
 </body>
 
