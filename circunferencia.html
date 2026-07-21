@@ -28,6 +28,25 @@ que são equidistantes de um ponto fixo, chamado <strong>centro</strong> da circ
 Qualquer segmento que liga o centro a um ponto da circunferência
 é chamado <strong>raio</strong>.
 </p>
+
+<label>
+Centro x:
+<input id="x" type="number" value="100">
+</label>
+
+<label>
+Centro y:
+<input id="y" type="number" value="80">
+</label>
+
+<label>
+Raio:
+<input id="raio" type="number" value="50">
+</label>
+
+<button onclick="criarCircunferencia()">
+Criar
+</button>
    
 <svg width="500" height="500" id="lousa">
 </svg>
@@ -70,14 +89,22 @@ class Circunferencia {
 
 }
 
-let O = new Ponto(100,80);
-
-let C = new Circunferencia(O,50);
-    
 let svg = document.getElementById("lousa");
 
-C.desenhar(svg);
 
+function criarCircunferencia() {
+
+    let x = Number(document.getElementById("x").value);
+    let y = Number(document.getElementById("y").value);
+    let raio = Number(document.getElementById("raio").value);
+
+    let O = new Ponto(x,y);
+
+    let C = new Circunferencia(O,raio);
+
+    C.desenhar(svg);
+
+}
 console.log(C);
 
 </script>
