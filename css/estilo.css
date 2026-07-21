@@ -9,6 +9,11 @@
 .controles {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.controles input {
+    width: 50px;
 }
 
 
