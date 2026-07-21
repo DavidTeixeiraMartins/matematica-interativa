@@ -5,6 +5,11 @@
     gap: 20px;
 }
 
+svg {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
 .controles {
     display: flex;
     flex-direction: column;
@@ -16,7 +21,3 @@
 }
 
 
-svg {
-    border: 1px solid black;
-    border-radius: 10px;
-}
