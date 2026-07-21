@@ -72,18 +72,29 @@ sagecell.makeSagecell({
 
 <script>
 
-class Circunferencia {
+class Ponto {
 
-    constructor(x, y, raio) {
+    constructor(x, y) {
         this.x = x;
         this.y = y;
+    }
+
+}
+
+
+class Circunferencia {
+
+    constructor(centro, raio) {
+        this.centro = centro;
         this.raio = raio;
     }
 
 }
 
 
-let C = new Circunferencia(0, 0, 50);
+let O = new Ponto(0,0);
+
+let C = new Circunferencia(O,50);
 
 console.log(C);
 
