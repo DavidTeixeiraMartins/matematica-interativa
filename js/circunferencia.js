@@ -20,6 +20,8 @@ class Circunferencia {
         circulo.setAttribute("stroke", "black");
 
         svg.appendChild(circulo);
+
+        this.centro.desenhar(svg);
     }
 
 }
