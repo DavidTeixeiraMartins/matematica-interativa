@@ -1,7 +1,7 @@
 class Lousa {
 
-    constructor(svg) {
-        this.svg = svg;
+    constructor(elementoSvg) {
+        this.svg = elementoSvg;
         this.objetos = [];
     }
 
