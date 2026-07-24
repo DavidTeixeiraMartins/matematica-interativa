@@ -1,22 +1,25 @@
-Objetos Fundamentais
+# Planejamento da Biblioteca Matemática Interativa
 
-[ ] Ponto
-[ ] Segmento
-[ ] Reta
-[ ] Circunferência
-[ ] Polígono
-[ ] Vetor
-[ ] Gráfico de Funções
-[ ] Ciclo Trigonométrico
+## Objetos Fundamentais
+
+- [ ] Ponto
+- [ ] Segmento
+- [ ] Reta
+- [ ] Circunferência
+- [ ] Polígono
+- [ ] Vetor
+- [ ] Gráfico de Funções
+- [ ] Ciclo Trigonométrico
 
 
+## Classe Ponto
 
-Classe Ponto
+Funcionalidades:
 
-- armazenar coordenadas
-- desenhar
-- mover
-- alterar cor
-- alterar tamanho
-- mostrar/ocultar
-- rótulo
+- Armazenar coordenadas
+- Desenhar
+- Mover
+- Alterar cor
+- Alterar tamanho
+- Mostrar/ocultar
+- Adicionar rótulo
