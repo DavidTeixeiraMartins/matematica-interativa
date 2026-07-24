@@ -59,7 +59,7 @@ Qualquer segmento que liga o centro a um ponto da circunferência
 
 
 
-    <svg width="600" height="400" id="lousa">
+    <svg width="600" height="400" id="lavagna" class="lousa1">
     </svg>
 
 
@@ -77,9 +77,9 @@ Qualquer segmento que liga o centro a um ponto da circunferência
 
 <script>
 
-let svg = document.getElementById("lousa");
+let lousa_svg = document.getElementById("lavagna");
 
-let lousa = new Lousa(svg);
+let lousa = new Lousa(lousa_svg);
 
 
 let botao = document.querySelector("button");
