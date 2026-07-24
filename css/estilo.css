@@ -1,9 +1,10 @@
 .painel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
 }
+
+
 
 .lousa {
     border: 1px solid blue;
