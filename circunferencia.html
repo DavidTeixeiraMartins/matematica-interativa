@@ -103,15 +103,20 @@ botao.onclick = function() {
 
 document.getElementById("raio").oninput = function(){
 
-    console.log(C.raio);
-
     if(C != null){
 
         C.raio = Number(this.value);
 
+        console.log(C.raio);
+
         lousa_obj.limpar();
 
         lousa_obj.adicionar(C);
+
+    }
+    else {
+
+        console.log("Ainda não existe circunferência");
 
     }
 
