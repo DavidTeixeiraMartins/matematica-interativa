@@ -44,8 +44,6 @@ Qualquer segmento que liga o centro a um ponto da circunferência
             )
         </label>
 
-
-        
         <label>
         Raio:
         <input 
@@ -62,8 +60,6 @@ Qualquer segmento que liga o centro a um ponto da circunferência
 
     </div>
 
-
-
     <svg width="600" height="400" id="quadro" class="lousa">
     </svg>
 
@@ -71,13 +67,11 @@ Qualquer segmento que liga o centro a um ponto da circunferência
 </div>
 
 
-
 <script src="js/ponto.js"></script>
 
 <script src="js/circunferencia.js"></script>
 
 <script src="js/lousa.js"></script>
-
 
 
 <script>
@@ -99,11 +93,9 @@ botao.onclick = function() {
 
     let raio = Number(document.getElementById("raio").value);
 
-
     let O = new Ponto(x,y);
 
     let C = new Circunferencia(O,raio);
-
 
     lousa_obj.adicionar(C);
 
@@ -124,11 +116,15 @@ document.getElementById("raio").oninput = function(){
 };
 
 
-
 </script>
 
 
 
+
+
+
+
+    
 </body>
 
 </html>
