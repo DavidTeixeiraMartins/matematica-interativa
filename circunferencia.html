@@ -101,11 +101,16 @@ botao.onclick = function() {
 
     console.log("Criou:", C);
 
+    console.log("Valor do raio:", C.raio);
+
     lousa_obj.adicionar(C);
 
 };
 
 document.getElementById("raio").oninput = function(){
+
+    console.log("Entrou no oninput");
+    console.log("C dentro do oninput:", C);
 
     if(C != null){
 
