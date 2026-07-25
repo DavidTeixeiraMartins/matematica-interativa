@@ -86,6 +86,7 @@ let lousa_svg = document.getElementById("quadro");
 
 let lousa_obj = new Lousa(lousa_svg);
 
+let C = null;
 
 let botao = document.querySelector("button");
 
@@ -107,6 +108,21 @@ botao.onclick = function() {
     lousa_obj.adicionar(C);
 
 };
+
+document.getElementById("raio").oninput = function(){
+
+    if(C != null){
+
+        C.raio = Number(this.value);
+
+        lousa_obj.limpar();
+
+        lousa_obj.adicionar(C);
+
+    }
+
+};
+
 
 
 </script>
