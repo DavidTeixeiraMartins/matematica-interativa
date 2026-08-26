@@ -7,7 +7,7 @@ class Ponto {
 
     desenhar(svg){
 
-        let ponto = document.createElementNS(
+        const ponto = document.createElementNS(
             "http://www.w3.org/2000/svg",
             "circle"
         );
