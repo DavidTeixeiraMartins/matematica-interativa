@@ -1,23 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matemática Interativa</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
 
-<h1>Matemática Interativa</h1>
+    <header>
+        <h1>Matemática Interativa</h1>
+    </header>
 
-<p>
-Construções matemáticas interativas utilizando SageMath e LaTeX.
-</p>
+    <main>
 
-<h2>Geometria</h2>
+        <aside class="painel">
 
-<a href="circunferencia.html">
-Circunferência
-</a>
+            <section class="ferramentas">
+                <h2>Objetos</h2>
+
+                <button>Ponto</button>
+                <button>Segmento</button>
+                <button>Reta</button>
+                <button>Circunferência</button>
+                <button>Polígono</button>
+                <button>Vetor</button>
+            </section>
+
+            <section class="graficos">
+                <h2>Gráficos</h2>
+
+                <button>Função</button>
+                <button>Ciclo trigonométrico</button>
+            </section>
+
+        </aside>
+
+        <section class="lousa">
+
+            <svg id="lousa" width="800" height="600">
+            </svg>
+
+        </section>
+
+        <aside class="propriedades">
+
+            <h2>Propriedades</h2>
+
+            <p>Nenhum objeto selecionado.</p>
+
+        </aside>
+
+    </main>
+
+    <script src="js/ponto.js"></script>
 
 </body>
+
 </html>
