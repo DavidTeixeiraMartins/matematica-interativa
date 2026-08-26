@@ -11,15 +11,21 @@
 - [ ] Gráfico de Funções
 - [ ] Ciclo Trigonométrico
 
-
 ## Classe Ponto
 
-Funcionalidades:
+### Estado matemático
+- [ ] Armazenar coordenadas
 
-- Armazenar coordenadas
-- Desenhar
-- Mover
-- Alterar cor
-- Alterar tamanho
-- Mostrar/ocultar
-- Adicionar rótulo
+### Representação
+- [ ] Desenhar
+- [ ] Alterar cor
+- [ ] Alterar tamanho
+- [ ] Mostrar/ocultar
+- [ ] Adicionar rótulo
+
+### Interação
+- [ ] Mover/arrastar
+
+### Relações
+- [ ] Poder ser referenciado por outros objetos
+
