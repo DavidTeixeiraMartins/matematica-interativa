@@ -1,3 +1,18 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
 
 .painel {
     display: flex;
