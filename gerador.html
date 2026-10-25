@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Gerador de Gráficos</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
@@ -11,13 +16,15 @@
     <h1>Gerador de Gráficos</h1>
 
     <div class="entrada-funcao">
+        <label for="funcao">f(x) =</label>
+        <input type="text" id="funcao">
+        <button id="gerar">Gerar</button>
+    </div>
 
-    <label for="funcao">f(x) =</label>
-
-    <input type="text" id="funcao">
-
-    <button>Gerar</button>
-
+    <div class="area-grafico">
+        <svg id="grafico" viewBox="0 0 800 500"
+             xmlns="http://www.w3.org/2000/svg">
+        </svg>
     </div>
 
 </body>
