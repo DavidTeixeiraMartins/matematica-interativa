@@ -18,3 +18,19 @@
     cursor: pointer;
 }
 
+.area-grafico {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+}
+
+#grafico {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 8 / 5;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
