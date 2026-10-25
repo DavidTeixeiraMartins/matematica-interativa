@@ -1,3 +1,4 @@
+alert("JavaScript carregado!");
 const campo = document.getElementById("funcao");
 const botao = document.getElementById("gerar");
 const grafico = document.getElementById("grafico");
