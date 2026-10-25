@@ -31,18 +31,66 @@
              xmlns="http://www.w3.org/2000/svg">
 
             
-            <g transform="translate(400, 250)">
+<g transform="translate(400, 250)">
+    <!-- Eixos -->
+    <line x1="-350" y1="0" x2="350" y2="0"
+          stroke="#64748b" stroke-width="1.2" />
 
-                <!-- Eixo horizontal -->
-                <line x1="-350" y1="0" x2="350" y2="0"
-                      stroke="black" stroke-width="2" />
+    <line x1="0" y1="-220" x2="0" y2="220"
+          stroke="#64748b" stroke-width="1.2" />
 
-                <!-- Eixo vertical -->
-                <line x1="0" y1="-220" x2="0" y2="220"
-                      stroke="black" stroke-width="2" />
+    <!-- Marcações no eixo x -->
+    <g stroke="#64748b" stroke-width="1">
+        <path d="
+            M -300 -5 V 5
+            M -240 -5 V 5
+            M -180 -5 V 5
+            M -120 -5 V 5
+            M -60 -5 V 5
+            M 60 -5 V 5
+            M 120 -5 V 5
+            M 180 -5 V 5
+            M 240 -5 V 5
+            M 300 -5 V 5
+        " />
+    </g>
 
-            </g>
+    <!-- Números do eixo x -->
+    <g fill="#475569" font-size="12" text-anchor="middle">
+        <text x="-300" y="20">-10</text>
+        <text x="-240" y="20">-8</text>
+        <text x="-180" y="20">-6</text>
+        <text x="-120" y="20">-4</text>
+        <text x="-60" y="20">-2</text>
+        <text x="60" y="20">2</text>
+        <text x="120" y="20">4</text>
+        <text x="180" y="20">6</text>
+        <text x="240" y="20">8</text>
+        <text x="300" y="20">10</text>
+    </g>
 
+    <!-- Marcações no eixo y -->
+    <g stroke="#64748b" stroke-width="1">
+        <path d="
+            M -5 -180 H 5
+            M -5 -120 H 5
+            M -5 -60 H 5
+            M -5 60 H 5
+            M -5 120 H 5
+            M -5 180 H 5
+        " />
+    </g>
+
+    <!-- Números do eixo y -->
+    <g fill="#475569" font-size="12" text-anchor="end">
+        <text x="-10" y="-176">6</text>
+        <text x="-10" y="-116">4</text>
+        <text x="-10" y="-56">2</text>
+        <text x="-10" y="64">-2</text>
+        <text x="-10" y="124">-4</text>
+        <text x="-10" y="184">-6</text>
+    </g>
+</g>
         </svg>
     </div>
 
