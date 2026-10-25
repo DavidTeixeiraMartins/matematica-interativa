@@ -30,7 +30,7 @@
     display: block;
     width: 800px;
     height: 500px;
-    border: 2px solid red;
+    border: 1px solid #ccc;
     background-color: white;
 }
 
