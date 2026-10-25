@@ -25,23 +25,26 @@
     <button id="gerar">Gerar</button>
     </div>
 
+    
     <div class="area-grafico">
         <svg id="grafico" viewBox="0 0 800 500"
              xmlns="http://www.w3.org/2000/svg">
+
+            
+            <g transform="translate(400, 250)">
+
+                <!-- Eixo horizontal -->
+                <line x1="-350" y1="0" x2="350" y2="0"
+                      stroke="black" stroke-width="2" />
+
+                <!-- Eixo vertical -->
+                <line x1="0" y1="-220" x2="0" y2="220"
+                      stroke="black" stroke-width="2" />
+
+            </g>
+
         </svg>
     </div>
-
-    <g transform="translate(400, 250)">
-
-    <!-- Eixo horizontal -->
-    <line x1="-350" y1="0" x2="350" y2="0"
-          stroke="black" stroke-width="2" />
-
-    <!-- Eixo vertical -->
-    <line x1="0" y1="-220" x2="0" y2="220"
-          stroke="black" stroke-width="2" />
-
-    </g>
 
 </body>
 
