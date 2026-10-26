@@ -89,10 +89,26 @@
             </g>
         </g>
     </svg>
+    <div id="formula">
+    $f(x)=x^2+1$
+    </div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/mathjs@14.8.1/lib/browser/math.js"></script>
 <script src="js/gerador.js"></script>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)']]
+    }
+  };
+</script>
+<script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
+  async>
+</script>
+
 </body>
 
 </html>
