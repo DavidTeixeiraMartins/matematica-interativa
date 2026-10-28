@@ -3,10 +3,7 @@ const botao = document.getElementById("gerar");
 const grafico = document.getElementById("grafico");
 
 // Cria uma camada para a curva, sem alterar os eixos.
-const camadaCurva = document.createElementNS(
-    "http://www.w3.org/2000/svg",
-    "g"
-);
+const camadaCurva = document.createElementNS("http://www.w3.org/2000/svg","g");
 
 camadaCurva.setAttribute("transform", "translate(400, 250)");
 grafico.appendChild(camadaCurva);
