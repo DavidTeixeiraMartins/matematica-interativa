@@ -31,17 +31,21 @@ function gerarGrafico()
             {
                 continue;
             }
-        pontos.push(`${x * 30},${-y * 30}`);
+
+            pontos.push(`${x * 30},${-y * 30}`);
         }
 
-    const curva = document.createElementNS("http://www.w3.org/2000/svg","polyline");
+        const curva = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "polyline"
+        );
 
-    curva.setAttribute("points", pontos.join(" "));
-    curva.setAttribute("fill", "none");
-    curva.setAttribute("stroke", "#2563eb");
-    curva.setAttribute("stroke-width", "2");
+        curva.setAttribute("points", pontos.join(" "));
+        curva.setAttribute("fill", "none");
+        curva.setAttribute("stroke", "#2563eb");
+        curva.setAttribute("stroke-width", "2");
 
-    camadaCurva.replaceChildren(curva);
+        camadaCurva.replaceChildren(curva);
     } 
     catch (erro)
     {
@@ -49,4 +53,5 @@ function gerarGrafico()
     }
 }
 
+botao.addEventListener("click", gerarGrafico);
 botao.addEventListener("click", gerarGrafico);
