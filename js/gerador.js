@@ -54,4 +54,3 @@ function gerarGrafico()
 }
 
 botao.addEventListener("click", gerarGrafico);
-botao.addEventListener("click", gerarGrafico);
