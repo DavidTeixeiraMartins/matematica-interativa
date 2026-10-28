@@ -23,7 +23,8 @@ function gerarGrafico()
         const funcao = math.compile(expressao);
         const pontos = [];
 
-        for (let x = -11; x <= 11; x += 0.05) {
+        for (let x = -11; x <= 11; x += 0.05) 
+        {
             const y = funcao.evaluate({ x: x });
 
             if (typeof y !== "number" || !Number.isFinite(y)) 
@@ -31,7 +32,7 @@ function gerarGrafico()
                 continue;
             }
         pontos.push(`${x * 30},${-y * 30}`);
-    }
+        }
 
     const curva = document.createElementNS("http://www.w3.org/2000/svg","polyline");
 
