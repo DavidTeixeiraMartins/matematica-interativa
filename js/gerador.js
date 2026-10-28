@@ -1,3 +1,4 @@
+
 const campo = document.getElementById("funcao");
 const botao = document.getElementById("gerar");
 const grafico = document.getElementById("grafico");
@@ -6,6 +7,7 @@ const grafico = document.getElementById("grafico");
 const camadaCurva = document.createElementNS("http://www.w3.org/2000/svg","g");
 
 camadaCurva.setAttribute("transform", "translate(400, 250)");
+
 grafico.appendChild(camadaCurva);
 
 function gerarGrafico() 
@@ -35,10 +37,7 @@ function gerarGrafico()
             pontos.push(`${x * 30},${-y * 30}`);
         }
 
-        const curva = document.createElementNS(
-            "http://www.w3.org/2000/svg",
-            "polyline"
-        );
+        const curva = document.createElementNS("http://www.w3.org/2000/svg","polyline");
 
         curva.setAttribute("points", pontos.join(" "));
         curva.setAttribute("fill", "none");
