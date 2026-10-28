@@ -46,9 +46,10 @@ function gerarGrafico()
 
         camadaCurva.replaceChildren(curva);
     } 
+    
     catch (erro)
     {
-        alert("Não foi possível interpretar essa função.");
+        alert(erro.message);
     }
 }
 
