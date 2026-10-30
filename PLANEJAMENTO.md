@@ -2,6 +2,12 @@
 
 ## Plano Cartesiano
 
+### Viewport (janela de visualização)
+
+Região visível destinada à representação do plano cartesiano. 
+Deve permitir deslocamento (pan) e ampliação/redução (zoom), 
+sem alterar o sistema de coordenadas matemáticas.
+
 
 ## Objetos Fundamentais
 
