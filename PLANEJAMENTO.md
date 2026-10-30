@@ -4,10 +4,27 @@
 
 ### Viewport (janela de visualização)
 
-Região visível destinada à representação do plano cartesiano. 
-Deve permitir deslocamento (pan) e ampliação/redução (zoom), 
-sem alterar o sistema de coordenadas matemáticas.
+Região visível destinada à representação do plano cartesiano.
 
+- [ ] Exibir inicialmente todo o SVG na janela do navegador, sem necessidade de rolagem da página.
+- [ ] Manter margens e espaçamentos adequados ao redor da área do gráfico.
+- [ ] Adaptar as dimensões do SVG ao espaço disponível (**layout responsivo**).
+- [ ] Preservar a proporção e a legibilidade do gráfico.
+- [ ] Permitir deslocamento do plano cartesiano (**pan**).
+- [ ] Permitir ampliação e redução da visualização (**zoom**).
+- [ ] Manter o sistema de coordenadas matemáticas independente das dimensões da tela.
+- [ ] Manter a origem matemática inicialmente centralizada no viewport.
+- [ ] Limitar a representação gráfica à região visível (**clipping**).
+
+### Eixos e coordenadas
+
+- [ ] Estender os eixos por toda a área interna do viewport.
+- [ ] Utilizar escala inicial de 30 pixels por unidade matemática.
+- [ ] Exibir marcações em intervalos de uma unidade.
+- [ ] Gerar automaticamente as marcações dos eixos.
+- [ ] Exibir os valores correspondentes às marcações.
+- [ ] Atualizar marcações e valores conforme o pan e o zoom.
+- [ ] Ajustar o espaçamento das marcações conforme a escala de visualização.
 
 ## Objetos Fundamentais
 
@@ -37,4 +54,5 @@ sem alterar o sistema de coordenadas matemáticas.
 
 ### Relações
 - [ ] Poder ser referenciado por outros objetos
+
 
