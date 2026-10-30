@@ -1,5 +1,8 @@
 # Planejamento da Biblioteca Matemática Interativa
 
+## Plano Cartesiano
+
+
 ## Objetos Fundamentais
 
 - [ ] Ponto
