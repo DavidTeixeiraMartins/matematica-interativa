@@ -34,7 +34,7 @@ function gerarGrafico()
                 continue;
             }
 
-            pontos.push(`${x * 30},${-y * 30}`);
+            pontos.push(`${x * 50},${-y * 50}`);
         }
 
         const curva = document.createElementNS("http://www.w3.org/2000/svg","polyline");
